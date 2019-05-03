@@ -1,0 +1,84 @@
+{% extends 'layout.html' %}
+
+    {% block body %}
+
+        <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 15px;
+      text-align: left;
+      width: 100%;
+      background-color: #008000;
+      color : white;
+
+    }
+
+     table{
+    margin-left:auto;
+    margin-right:auto;
+    }
+
+    .jumbotron{background-color: #FFFFFF!important;}
+
+
+
+    @keyframes ticker {
+    0% { transform: translate3d(0, 0, 0); }
+    100% { transform: translate3d(-100%, 0, 0); }
+  }
+  .tcontainer{
+    width: 100%;
+    overflow: hidden;
+  }
+  .ticker-wrap {
+    width: 100%;
+    padding-left: 100%;
+    background-color: #008000;
+  }
+  .ticker-move {
+    display: inline-block;
+    white-space: nowrap;
+    padding-right: 100%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: ticker;
+    animation-duration: 10s;
+  }
+  .ticker-move:hover{
+    animation-play-state: paused;
+  }
+  .ticker-item{
+    display: inline-block;
+    padding: 0 2rem;
+    color : white;
+  }
+    </style>
+
+
+        <div class="jumbotron text-center">
+            <h1>Live Stock News</h1>
+            <p>Get All Live Stock Updates Down Below :</p>
+            <table border=2 cellpadding=40>
+                {% for i in results %}
+            <tr>
+                <td>{{ i }}</td>
+            </tr>
+                {% endfor %}
+
+            </table>
+        </div>
+
+    <div class="tcontainer">
+    <div class="ticker-wrap">
+      <div class="ticker-move">
+        <div class="ticker-item">Stocks making the biggest moves: Activision Blizzard, Dish Network, Tesla - CNBC</div>
+        <div class="ticker-item">Dow gains more than 200 points as stock market gains after April jobs report - MarketWatch</div>
+        <div class="ticker-item">State regulators call Duke Energy ‘tone deaf,’ slam its executives’ salaries - WYFF4 Greenville</div>
+        <div class="ticker-item">What is in Beyond Meat burger? - Business Insider</div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

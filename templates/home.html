@@ -1,0 +1,214 @@
+{% extends 'layout.html' %}
+
+    {% block body %}
+
+
+        <style>
+        .jumbotron {
+          background-color: #008000; /* Green */
+          color: #ffffff;
+        }
+
+        .panel {
+          border: 1px solid #008000;
+          border-radius:0;
+          transition: box-shadow 0.5s;
+        }
+
+        .panel:hover {
+          box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+        }
+
+        .panel-footer .btn:hover {
+          border: 1px solid #008000;
+          background-color: #fff !important;
+          color: #f4511e;
+        }
+
+        .panel-heading {
+          color: #fff !important;
+          background-color: #008000 !important;
+          padding: 25px;
+          border-bottom: 1px solid transparent;
+          border-top-left-radius: 0px;
+          border-top-right-radius: 0px;
+          border-bottom-left-radius: 0px;
+          border-bottom-right-radius: 0px;
+        }
+
+        .panel-footer {
+          background-color: #fff !important;
+        }
+
+        .panel-footer h3 {
+          font-size: 32px;
+        }
+
+        .panel-footer h4 {
+          color: #aaa;
+          font-size: 14px;
+        }
+
+        .panel-footer .btn {
+          margin: 15px 0;
+          background-color: #008000;
+          color: #fff;
+        }
+        </style>
+
+
+
+        <div class="jumbotron text-center">
+            <br>
+            <h1>HashFinancial</h1>
+            <p class="lead">This Application helps to predict the Future Stock Prices by taking in account the historical stock data</p>
+
+            <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+          <form>
+            <div class="form-row">
+              <div class="col-12 col-md-35 mb-2 mb-md-0">
+                  <p><a class="btn btn-primary btn-lg" href="#" role="button">DOWNLOAD NOW »</a></p>
+              </div>
+          </form>
+            </div>
+        </div>
+            </div>
+        </div>
+
+
+<section class="features-icons bg-light text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+            <div class="features-icons-icon d-flex">
+              <i class="icon-screen-desktop m-auto text-primary"></i>
+            </div>
+            <h3>Trading performance</h3>
+            <p class="lead mb-0">More than 80% of our top recommendations led to the successful trades
+We track annual return, downside risk, Sortino ratio and other metrics of our models</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+            <div class="features-icons-icon d-flex">
+              <i class="icon-layers m-auto text-primary"></i>
+            </div>
+            <h3>Corporate events and news</h3>
+            <p class="lead mb-0">Take into account corporate events and market news</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+            <div class="features-icons-icon d-flex">
+              <i class="icon-check m-auto text-primary"></i>
+            </div>
+            <h3>Deep Learning</h3>
+            <p class="lead mb-0">Predictions are performed daily by the state-of-art neural networks models
+We have trained models for the most of the S&P 500 Index constituents</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<br>
+<hr>
+<br>
+
+
+
+<div class="container-fluid">
+  <div class="text-center">
+    <h2>Pricing</h2>
+    <h4>Choose a payment plan that works for you</h4>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Free</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>20</strong> Searches/Day</p>
+          <p><strong>15</strong> News/Day</p>
+          <p><strong>5</strong> Companies/Day</p>
+          <p><strong>2</strong> Accounts</p>
+          <p><strong>Endless</strong> Fun</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$0</h3>
+          <h4>per month</h4>
+          <button class="btn btn-lg">Sign Up</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Pro</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>50</strong> Searches/Day</p>
+          <p><strong>25</strong> News/Day</p>
+          <p><strong>10</strong> Companies/Day</p>
+          <p><strong>5</strong> Accounts</p>
+          <p><strong>Endless</strong> Fun</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$29</h3>
+          <h4>per month</h4>
+          <button class="btn btn-lg">Sign Up</button>
+        </div>
+      </div>
+    </div>
+   <div class="col-sm-4">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Advanced</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>100</strong> Searches/Day</p>
+          <p><strong>50</strong> News/Day</p>
+          <p><strong>25</strong> Companies/Day</p>
+          <p><strong>10</strong> Accounts</p>
+          <p><strong>Endless</strong> Fun</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$49</h3>
+          <h4>per month</h4>
+          <button class="btn btn-lg">Sign Up</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+<div class="container-fluid bg-grey">
+  <h2 class="text-center">CONTACT</h2>
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+    <button type="button" class="btn btn-primary btn-lg btn-block">Send Now</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+    {% endblock %}
